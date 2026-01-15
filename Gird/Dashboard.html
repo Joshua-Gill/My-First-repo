@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Dashboard.css">
+    <title>Admin dashboard</title>
+ 
+        
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2 style="color: white; margin: 40px;">Dashboard</h2>
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Sales</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i> Messages</a>
+            <a href="#"><i class="fa-solid fa-user"></i> User</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+            <a href="#" class="logout"><i class="fa-solid fa-lock"></i> Logout</a>
+        </div>
+        
+        <div class="grid-layout">
+            <div class="nav">
+                <h2 style="margin-left: 20px;">Admin dashboard</h2>
+                 <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input  class="bell" type="text" placeholder="Search">
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="image-box">
+                    <img src="my img.jpeg" >
+                </div>
+                
+            </div> 
+           
+        <div class="Cards">
+                <div class="card"> <canvas id="salesChart"></canvas></div>
+                <div class="card"><canvas id="trafficChart"></canvas></div>
+                <div class="card"><canvas id="miniChart"></canvas></div>
+                <div class="card"><canvas id="kpiChart"></canvas></div>
+        </div>
+             <div class="big-cards">
+                <div class="big-card"><canvas id="myChart"></canvas></div>
+                <div class="big-card"><canvas id="chart2"></canvas> </div>
+                <div class="big-card"><canvas id="chart3"></canvas> </div>
+                <div class="big-card"><canvas id="usersChart"></canvas></div>
+             </div>
+              <div class="last">
+                <div class="last-big"> <canvas id="overviewChart"></canvas></div>
+             </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="Dashboard.js"></script>
+
+
+</body>
+</html>
