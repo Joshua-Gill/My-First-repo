@@ -1,0 +1,209 @@
+body{
+   background-color:#121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#heading{
+    
+    font-size:30px;
+    word-spacing: 10px;
+   
+    margin-top: 70px;
+  
+  color: #F8FAFC;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  /* This creates the "Classy" look */
+  letter-spacing: 4px; 
+  
+  /* A very soft glow to match the buttons */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 
+               0 0 5px rgba(59, 130, 246, 0.3);
+  
+  /* Optional: a subtle gradient for the text itself */
+  background: linear-gradient(to bottom, #FFFFFF, #CBD5E1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Btn-container{
+    display: grid;
+    grid-template-columns: 380px 380px;
+    grid-template-rows:repeat(4,60px) ;
+    grid-gap:100px 250px;
+    border-radius: 12px;
+   background-color:rgba(255, 255, 255, 0.03) ;
+    margin-top: 70px;
+}
+.Btns{
+     /* height: 50px; */
+     /* width: 260px; */
+     /* border: 2px  solid white ;
+     color:#F8FAFC;
+    background-color: #3B82F6 → #1E40AF;
+*/
+    display:block;
+    font-size:15px;
+    font-weight: 600;
+    word-spacing: 5px;
+    letter-spacing:2px;
+    text-decoration: none;
+   background: linear-gradient(180deg, #3B82F6 0%, #1E40AF 100%);
+  
+  /* Text Styling */
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  /* Shape & Border */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Soft white border */
+  border-radius: 12px;
+  padding: 15px 30px;
+  cursor: pointer;
+
+  /* The "Aesthetic" Glow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 
+              0 0 10px rgba(59, 130, 246, 0.4);
+transition: all 0.3s ease;
+}
+    
+
+.Btns:hover{
+    /* background-color:white;
+    cursor: pointer;
+    font-size:18px ;
+    color: black; */
+    /* Apply this to your main ATM buttons */
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+      filter: brightness(1.1);
+
+}
+.section{
+    display: none;
+ 
+}
+.input-box{
+  margin-top: 100px;
+  background: rgba(15, 23, 42, 0.6); /* Deep navy tint */
+  border: 1px solid rgba(238, 230, 230, 0.1);
+  border-radius: 12px;
+  padding: 18px 20px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-family: 'Courier New', monospace; /* Monospace looks more "secure" for PINs/Amounts */
+  letter-spacing: 2px;
+  text-align: center; /* Better for ATM PINs/Amounts */
+  outline: none;
+  transition: all 0.3s ease;
+  
+  /* Inner shadow to make it look recessed */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  border-color: #3B82F6;
+  background: rgba(15, 23, 42, 0.8);
+  /* Sapphire glow when you click to type */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5), 
+              0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+input::placeholder {
+  color: #b5c2d4; /* Muted slate color */
+  letter-spacing: normal;
+}
+
+.main-button{
+    display: none;
+    height:65px;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+   
+   border-radius: 4px;
+    border: 2px solid black;
+    position: relative;
+    top: 120px;
+    left: 50px;
+}
+.main-button:hover{
+    cursor: pointer;
+ 
+
+    font-size: 16px;
+}
+.Enter-Btn{
+    height: 50px;
+    width:150px;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 65px;
+    margin-left:500px;
+    border-radius: 4px;
+    border: 2px solid black;
+    color: white;
+    display: none;
+}
+.Enter-Btn:hover{
+    cursor: pointer;
+
+   }
+   .result-box{
+     /* color: white;
+     word-spacing: 10px;
+     font-size:50px;
+     padding: 20px;
+     margin-top: 200px; */
+     display: none;
+    
+  
+    /* Position it right in the center */
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /* THE FIX: Bright, glowing text */
+    color: #bfded6; 
+    text-shadow: 0 0 10px rgba(201, 244, 234, 0.6); 
+    
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    z-index:99; /* Ensures it sits on top of buttons */
+
+  
+  /* The "Secret Sauce" for Aesthetic Text */
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing:10px;
+  line-height: 1.6;
+}
+
+/* Success State - Glowing Mint */
+.result-box.text-success {
+  color: #00FFC2 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 194, 0.6),
+                 0 0 20px rgba(0, 255, 194, 0.3);
+}
+
+
+/* Error State - Glowing Rose */
+.result-box.text-error {
+  color: #FF4D6D !important;
+    text-shadow: 0 0 10px rgba(255, 77, 109, 0.6),
+                 0 0 10px rgba(255, 77, 109, 0.3);
+}
+
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bank account .css">
+    <title>Bank Account</title>
+</head>
+<body>
+    <h1 id="heading">Please select a Transaction</h1>
+      <div class="Btn-container">
+       
+            <button class="Btns" onclick="showsection('Transaction History')">Transaction History</button>
+            <button class="Btns" onclick="showsection('Balance Inquiry')">Balance Inquiry</button>
+            <button class="Btns" onclick="showsection('Withdraw')">Cash Withdrawl</button>
+            <button class="Btns" onclick="showsection('deposit')">Cash Deposit</button>
+            <button class="Btns" onclick="showsection('Rich Accounts')">Rich Accounts</button>
+            <button class="Btns" onclick="showsection('Pin Change')">Pin Change</button>
+            <button class="Btns" onclick="showsection('Bill Payment')">Bill Payment</button>
+            <button class="Btns" onclick="showsection('Transfer Funds')">Transfer Funds</button>
+      </div>
+       <div id="section-container">
+            <div id="Transaction History" class="section">
+             <input type="number" class="input-box" id= "trans-accNo" placeholder="Enter AccountNO">
+             <input type="password" class="input-box" id="trans-pass" placeholder="Enter your Password">
+             </div>
+            <div id="Balance Inquiry"     class="section"><h1>
+                <input type="number" class="input-box" id="Balance-accNo" placeholder="Enter AccountNO "> 
+                <input type="password" class="input-box"id="Balance-pass"  placeholder="Enter your Password">
+            </div>
+            <div id="Withdraw"            class="section">
+                <input type="number" class="input-box" id="withdraw-accNo" placeholder="Enter AccountNO">
+                <input type="password" class="input-box "id="withdraw-pass" placeholder="Enter your Password ">
+                <input type="number" class="input-box" id="withdraw-amt" placeholder="Enter Withdraw Amount ">
+            </div>
+            <div id="deposit"             class="section">
+                <input type="number" class="input-box" id="deposit-accNo" placeholder="Enter AccountNO ">
+                <input type="password" class="input-box"id="deposit-pass" placeholder="Enter your Password ">
+                <input type="number" class="input-box"  id="deposit-amt" placeholder="Enter Deposit Amount ">
+            </div>
+            <div id="Rich Accounts"       class="section">
+                <input type="number" class="input-box" id="Rich-amt" placeholder="Enter Reach amount">
+
+               
+            </div>
+            <div id="Pin Change"          class="section">
+                <input type="number" class="input-box"id="Pin-accNo" placeholder="Enter AccountNO">
+                 <input type="password" class="input-box" id="Pin-old-pass" placeholder="Enter Old Password ">
+                <input type="password" class="input-box" id="Pin-new-pass"placeholder="Enter New Password ">
+                 
+            </div>
+            <div id="Bill Payment"        class="section">
+                <input type="number" class="input-box" id="Bill-accNo" placeholder="Enter AccountNO">
+                  <input type="password" class="input-box" id="Bill-pass" placeholder="Enter your Password ">
+                  <input type="number" class="input-box" id="Bill-amt"  placeholder="Enter Bill Amount ">
+            </div>
+            <div id="Transfer Funds"      class="section">
+                <input type="number" class="input-box" id="transfer-accNo" placeholder="Enter AccountNO">
+                 <input type="password" class="input-box" id="transfer-pass" placeholder="Enter your Password ">
+                <input type="number" class="input-box" id="transfer-amt" placeholder="Enter Transfer Amount ">
+                
+            </div>
+            <button class="main-button Btns">Select another Transaction</button>
+               <button onclick="login()" class="Enter-Btn Btns">Enter</button>
+
+        </div>
+       <div class="result-box" id="result"> Output</div>
+    <script src="Bank account.js"></script>
+</body>
+</html>
