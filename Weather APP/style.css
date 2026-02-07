@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+   
+  margin: 0;
+  width: 90%;
+  min-height: 100vh;
+border-radius: 15px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.04) 40%,
+      rgba(0, 0, 0, 0.15) 75%
+    );
+}
+/* .bg-overlay {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 240, 220, 0.22),
+      rgba(255, 240, 220, 0.06) 45%,
+      rgba(0, 0, 0, 0.18) 75%
+    );
+} */
+
+.sidebar {
+  position: relative;
+  z-index: 2;
+  margin: 40px;
+  width: 300px;
+  height: 85vh;
+padding: 25px;
+  background: rgba(20, 25, 30, 0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+.status-icon {
+  width: 48px;
+}
+
+.status-condition {
+  font-weight: 600;
+}
+
+.status-feels {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.first-box{
+    margin-top: 30px;
+}
+.side-heading{
+    color:white;
+    font-size:19px;
+}
+.status-box{
+    height: 160px;
+    width:90%;
+   border-radius: 8px;
+   margin-top:13px;
+   
+}
+.select-area{
+    height: 160px;
+    width:90%;
+   border-radius: 8px;
+   margin-top:13px;
+}
+.glass-box {
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+
+  /* dark invisible glass */
+  background: rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  /* subtle separation */
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  /* depth */
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.06),
+    0 6px 20px rgba(0,0,0,0.4);
+
+  color: #eaeaea;
+}
+.second-box{
+    margin-top: 20px;
+}
+.earth-image{
+    margin: 10px;
+    height: 250px;
+     width: 250px;
+    border-radius: 100%;
+
+}
+.Btns{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right:40px;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px; /* Adjust as needed */
+}
+
+.magnifier {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color:white;
+  pointer-events: none; /* Allows clicks to pass through to the input */
+  z-index: 10;
+
+  }
+.search-btn{
+    width: 80%;
+  padding: 10px 10px 10px 35px; /* Extra left padding to make room for the icon */
+  font-size: 16px;
+  
+  border-radius: 8px;
+  outline: none
+}
+.download{
+     font-size: 14px;
+     color: white;
+
+}
+.weather-box{
+    display: flex;
+    position:absolute;
+    top:80px;
+    left: 470px;
+    height:280px;
+    width: 700px;
+    font-size: 15px;
+    font-weight: 0;
+}
+.current-date{
+  margin-top: 10px;
+  margin-left: 40px;
+
+}
+.temp{
+    font-size: 90px;
+    position: absolute;
+  top: 80px;
+  left: 70px;
+  
+}
+.condition{
+    position: absolute;
+  top: 185px;
+  left: 120px;
+}
+.temprature-box{
+  position:absolute;
+  top: 30px;
+  left: 380px;
+    height: 220px;
+    width: 300px;
+  
+    font-size: 20px;
+    padding:15px;
+ 
+}
+.white-glass{
+     background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow: 
+    0 4px 20px rgba(0, 0, 0, 0.04);
+}
+.wea-boxes{
+    position: absolute;
+    top: 380px;
+    left: 470px;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top:30px;
+}
+.box{
+    height:130px;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.graph{
+color: white;
+}
+.labels{
+   display: grid;
+   grid-template-columns:repeat(8,1fr);
+   
+   font-size: 13px;
+   margin-top: 30px;
+}
+.graph {
+  width: 100%;
+  height: 120px;           /* 🔥 REQUIRED */
+}
+
+.line {
+  fill: none;
+  stroke: #1f4fd8;         /* 🔥 visible blue */
+  stroke-width: 3;         /* thicker */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.graph circle {
+  fill: #fff;
+  stroke: #1f4fd8;
+  stroke-width: 2;
+}
+

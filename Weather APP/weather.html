@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather APP</title>
+</head>
+<body>
+  
+    <div class="bg-overlay"></div>
+     <div class="sidebar">
+          <h3 class="heading">Weather Wise</h3>
+        <div class="first-box">
+            <p class="side-heading">status</p>
+            <div class=" glass-box status-box">
+                 <img class="status-icon" />
+                   <div class="status-text">
+                 <p class="status-condition">—</p>
+                  <p class="status-feels">Feels like —°C</p>
+               </div>
+
+            </div>
+            <p class="side-heading" style="text-align: center;">See more details</p>
+        </div>  
+        <div class="second-box">
+       <p class="side-heading">Select area</p>
+        <img class="earth-image" src="earth.png" alt="earth icon">
+        <p class="glass-box side-display" style="text-align: center; "></p>
+        </div>
+     </div>
+       <div class="main-content">
+            <div class="Btns">
+                <div class="search-container">
+                     <i class="fa-solid fa-magnifying-glass magnifier"></i>
+                      <input class="glass-box search-btn" type="text" placeholder="Search for a city">
+                </div>
+                   <button class="glass-box get-weather-btn"> Get Weather</button>
+           </div>
+               
+    <div class="glass-box weather-box">
+        <h2 class="city-name"></h2>
+        <p class="current-date"></p>
+        <h1 class="temp"></h1>
+        <p class="condition"><img class="condition-icon"></p>
+    <div class="temprature-box white-glass">
+            <h3>Temprature</h3>
+            <svg viewBox="0 0 300 100" class="graph">
+             <!-- line -->
+             <path
+            class="line"
+            d="M20 60 Q75 40 130 55 T240 45"
+            fill="none"
+            />
+    
+         <!-- points -->
+        <circle cx="20" cy="60" r="4" />
+        <circle cx="95" cy="50" r="4" />
+        <circle cx="170" cy="55" r="4" />
+        <circle cx="240" cy="45" r="4" />
+    </svg>
+    
+      <div class="labels">
+         <span class="label span">°</span><br>
+         <span class="label span"></span><br>
+         <span class="label span"> </span><br>
+         <span class="label span"> </span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="wea-boxes">
+        <div class="wind white-glass box">
+           <h3>Wind</h3>
+        <span class="wind-speed"></span>
+    </div>
+    <div class="rain white-glass box">
+        <h3>Rain Chance</h3>
+         <span class="rain-chance"></span>
+    </div>
+    <div class="humidity white-glass box">
+       <h3>Humidity</h3>
+         <span class="humidity-level"></span>
+    </div>
+    <div class="UV white-glass box">
+        <h3>UV Index</h3>
+     <span class="uv-index"></span>
+    </div>
+    </div>
+       </div>
+       <script src="script.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <p class="temperature">Temperature: 25°C</p>
+                        <p class="condition">Condition: Sunny</p>
+                        <p class="humidity">Humidity: 60%</p>
+                        <p class="wind-speed">Wind Speed: 10 km/h</p> -->
